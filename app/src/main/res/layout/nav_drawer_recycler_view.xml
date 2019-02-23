@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="300dp"
+  android:layout_height="match_parent"
+  android:layout_gravity="start"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <ImageView
+      android:id="@+id/ic_close_hanberger"
+      android:layout_width="50dp"
+      android:layout_height="20dp"
+      android:layout_gravity="center"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:clickable="true"
+      android:paddingLeft="20dp"
+      android:scaleType="fitCenter"
+      android:src="@android:drawable/ic_menu_close_clear_cancel"
+      android:theme="@style/AppTheme"
+      android:tint="@android:color/white" />
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/left_drawer"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    tools:listitem="@layout/item_nav_drawer" />
+</LinearLayout>
+
